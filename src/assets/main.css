@@ -1,0 +1,21 @@
+@import './base.css';
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 3vw 5vw; */
+  font-weight: normal;
+}
+
+li{
+  list-style: none;
+}
+
+
+
+
