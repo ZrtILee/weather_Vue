@@ -19,7 +19,7 @@ export const useHourlyStore = defineStore({
                     if(res.data.code == 200){
                         this.data = res.data.hourly
                         sessionStorage.setItem('hourly',JSON.stringify(res.data.hourly))
-                    // console.log(res.data.hourly)
+                    console.log(res.data)
                     }else{
                         this.data = JSON.parse(sessionStorage.getItem('hourly'))
                     }

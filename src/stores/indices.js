@@ -17,7 +17,7 @@ export const useIndicesStore = defineStore({
                     if(res.data.code == 200){
                         this.data = res.data.daily
                         sessionStorage.setItem('indices',JSON.stringify(res.data.daily))
-                    // console.log(this.data)
+                    console.log(res.data)
                     }else{
                         this.data = JSON.parse(sessionStorage.getItem('indices'))
                     }

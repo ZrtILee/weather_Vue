@@ -16,7 +16,7 @@ export const useAirStore = defineStore({
                     if(res.data.code == 200){
                         this.data = res.data.daily
                         sessionStorage.setItem('air',JSON.stringify(res.data.daily))
-                    // console.log(res)
+                    console.log(res)
                     }else{
                         this.data = JSON.parse(sessionStorage.getItem('air'))
                     }

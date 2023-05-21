@@ -18,7 +18,7 @@ export const useWeeksStore = defineStore({
                     if(res.data.code == 200){
                         this.data = res.data.daily
                         sessionStorage.setItem('weeks',JSON.stringify(res.data.daily))
-                    // console.log(res,this.data)
+                    console.log(res,this.data)
 
                     }else{
                         this.data = JSON.parse(sessionStorage.getItem('weeks'))

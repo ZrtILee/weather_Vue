@@ -96,7 +96,7 @@ onActivated(()=>{
     <ShortTimeVue></ShortTimeVue>
     <Weeks/>
     <Advice/>
-    <Indices :type='[1,2,3,5,9,15]' :index="0" :open="true" />
+    <Indices v-if="indices.data[0]" :type='[1,2,3,5,9,15]' :index="0" :open="true" />
   </main>
   
 </template>
